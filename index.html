@@ -2,21 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=j, initial-scale=1.0">
+    <meta name="viewport" content="width=width, initial-scale=1.0">
     <title>Media Player</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header>
-        <h1><a href="">Audio</a></h1>
+        <h1><a href="" class="active">Audio</a></h1>
         <h1><a href="">Video</a></h1>
     </header>
+    <aside class="audioPlayer">
+        <h3>Estás escuchando...</h3>
+        <img src="./media/img/infraction-sensitive.jpeg" alt="">
+        <div class="songInfo">
+            <h3>Ay Mamá</h3>
+            <p>Rigoberta Bandini</p>
+        </div>
+        <div class="audioProgress">
+            <div class="audioSeek"></div>
+        </div>
+        <div class="audioControls">
+            <i class="fas fa-fast-backward" id="backSong"></i>
+            <i class="fas fa-play" id="playPause"></i>
+            <i class="fas fa-fast-forward" id="nextSong" onclick="loadSong('Infraction_-_Sensitive.mp3')"></i>
+        </div>
+        <audio src="" id="music"></audio>
+    </aside>
     <main>
-        <section class="audioPlayer">
-
-        </section>
-        <section class="audioContent">
-            
-        </section>
     </main>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
